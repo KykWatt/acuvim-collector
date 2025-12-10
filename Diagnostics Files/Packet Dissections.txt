@@ -1,0 +1,431 @@
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.828749       192.168.68.62         192.168.68.43         Modbus/TCP 75        Query: Trans: 14751; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 4: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 1, Ack: 1, Len: 21
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.832656       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=1 Ack=22 Win=457 Len=0
+
+Frame 5: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1, Ack: 22, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.861705       192.168.68.43         192.168.68.62         Modbus/TCP 66     Response: Trans: 14751; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 6: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1, Ack: 22, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.907436       192.168.68.62         192.168.68.43         TCP      54     52510 → 502 [ACK] Seq=22 Ack=13 Win=1026 Len=0
+
+Frame 8: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 22, Ack: 13, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.912851       192.168.68.62         192.168.68.43         Modbus/TCP 66        Query: Trans: 14752; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 9: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 22, Ack: 13, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.957567       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=13 Ack=34 Win=457 Len=0
+
+Frame 10: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 13, Ack: 34, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 1.020117       192.168.68.43         192.168.68.62         Modbus/TCP 309    Response: Trans: 14752; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 11: 309 bytes on wire (2472 bits), 309 bytes captured (2472 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 13, Ack: 34, Len: 255
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 1.020682       192.168.68.62         192.168.68.43         Modbus/TCP 75        Query: Trans: 14753; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 12: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 34, Ack: 268, Len: 21
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 1.023950       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=268 Ack=55 Win=457 Len=0
+
+Frame 13: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 268, Ack: 55, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 1.087974       192.168.68.43         192.168.68.62         Modbus/TCP 66     Response: Trans: 14753; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 14: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 268, Ack: 55, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 1.138942       192.168.68.62         192.168.68.43         Modbus/TCP 66        Query: Trans: 14754; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 15: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 55, Ack: 280, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 1.141975       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=280 Ack=67 Win=457 Len=0
+
+Frame 16: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 280, Ack: 67, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 1.237139       192.168.68.43         192.168.68.62         Modbus/TCP 309    Response: Trans: 14754; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 17: 309 bytes on wire (2472 bits), 309 bytes captured (2472 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 280, Ack: 67, Len: 255
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 1.238151       192.168.68.62         192.168.68.43         Modbus/TCP 75        Query: Trans: 14755; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 18: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 67, Ack: 535, Len: 21
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 1.242350       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=535 Ack=88 Win=457 Len=0
+
+Frame 19: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 535, Ack: 88, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 1.290121       192.168.68.43         192.168.68.62         Modbus/TCP 66     Response: Trans: 14755; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 20: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 535, Ack: 88, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 1.340496       192.168.68.62         192.168.68.43         Modbus/TCP 66        Query: Trans: 14756; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 21: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 88, Ack: 547, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 1.344645       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=547 Ack=100 Win=457 Len=0
+
+Frame 22: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 547, Ack: 100, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 1.452018       192.168.68.43         192.168.68.62         Modbus/TCP 309    Response: Trans: 14756; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 23: 309 bytes on wire (2472 bits), 309 bytes captured (2472 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 547, Ack: 100, Len: 255
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 1.453102       192.168.68.62         192.168.68.43         Modbus/TCP 75        Query: Trans: 14757; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 24: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 100, Ack: 802, Len: 21
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 1.455806       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=802 Ack=121 Win=457 Len=0
+
+Frame 25: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 802, Ack: 121, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 1.657793       192.168.68.43         192.168.68.62         Modbus/TCP 66     Response: Trans: 14757; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 26: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 802, Ack: 121, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 1.699395       192.168.68.62         192.168.68.43         TCP      54     52510 → 502 [ACK] Seq=121 Ack=814 Win=1023 Len=0
+
+Frame 27: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 121, Ack: 814, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 1.708413       192.168.68.62         192.168.68.43         Modbus/TCP 66        Query: Trans: 14758; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 28: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 121, Ack: 814, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 1.712011       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=814 Ack=133 Win=457 Len=0
+
+Frame 29: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 814, Ack: 133, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 1.851857       192.168.68.43         192.168.68.62         Modbus/TCP 309    Response: Trans: 14758; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 30: 309 bytes on wire (2472 bits), 309 bytes captured (2472 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 814, Ack: 133, Len: 255
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 1.852265       192.168.68.62         192.168.68.43         Modbus/TCP 75        Query: Trans: 14759; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 31: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 133, Ack: 1069, Len: 21
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 1.855688       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=1069 Ack=154 Win=457 Len=0
+
+Frame 32: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1069, Ack: 154, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 1.952602       192.168.68.43         192.168.68.62         Modbus/TCP 66     Response: Trans: 14759; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 33: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1069, Ack: 154, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 1.994743       192.168.68.62         192.168.68.43         TCP      54     52510 → 502 [ACK] Seq=154 Ack=1081 Win=1022 Len=0
+
+Frame 34: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 154, Ack: 1081, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 2.003919       192.168.68.62         192.168.68.43         Modbus/TCP 66        Query: Trans: 14760; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 35: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 154, Ack: 1081, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 2.007173       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=1081 Ack=166 Win=457 Len=0
+
+Frame 36: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1081, Ack: 166, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 2.161873       192.168.68.43         192.168.68.62         Modbus/TCP 309    Response: Trans: 14760; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 37: 309 bytes on wire (2472 bits), 309 bytes captured (2472 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1081, Ack: 166, Len: 255
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 2.162497       192.168.68.62         192.168.68.43         Modbus/TCP 75        Query: Trans: 14761; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 38: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 166, Ack: 1336, Len: 21
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 2.166121       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=1336 Ack=187 Win=457 Len=0
+
+Frame 39: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1336, Ack: 187, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 2.254995       192.168.68.43         192.168.68.62         Modbus/TCP 66     Response: Trans: 14761; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 40: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1336, Ack: 187, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 2.306181       192.168.68.62         192.168.68.43         Modbus/TCP 66        Query: Trans: 14762; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 41: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 187, Ack: 1348, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 2.310827       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=1348 Ack=199 Win=457 Len=0
+
+Frame 42: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1348, Ack: 199, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     45 2.453067       192.168.68.43         192.168.68.62         Modbus/TCP 309    Response: Trans: 14762; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 45: 309 bytes on wire (2472 bits), 309 bytes captured (2472 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1348, Ack: 199, Len: 255
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     46 2.454040       192.168.68.62         192.168.68.43         Modbus/TCP 75        Query: Trans: 14763; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 46: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 199, Ack: 1603, Len: 21
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     47 2.458113       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=1603 Ack=220 Win=457 Len=0
+
+Frame 47: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1603, Ack: 220, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     48 2.584136       192.168.68.43         192.168.68.62         Modbus/TCP 66     Response: Trans: 14763; Unit:   1, Func:  16: Write Multiple Registers
+
+Frame 48: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1603, Ack: 220, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     49 2.632604       192.168.68.62         192.168.68.43         TCP      54     52510 → 502 [ACK] Seq=220 Ack=1615 Win=1026 Len=0
+
+Frame 49: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 220, Ack: 1615, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 2.635126       192.168.68.62         192.168.68.43         Modbus/TCP 66        Query: Trans: 14764; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 50: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 220, Ack: 1615, Len: 12
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     51 2.638504       192.168.68.43         192.168.68.62         TCP      54     502 → 52510 [ACK] Seq=1615 Ack=232 Win=457 Len=0
+
+Frame 51: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1615, Ack: 232, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     52 2.821902       192.168.68.43         192.168.68.62         Modbus/TCP 309    Response: Trans: 14764; Unit:   1, Func:   3: Read Holding Registers
+
+Frame 52: 309 bytes on wire (2472 bits), 309 bytes captured (2472 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 1615, Ack: 232, Len: 255
+Modbus/TCP
+Modbus
+
+No.     Time           Source                Destination           Protocol Length Info
+     53 2.862633       192.168.68.62         192.168.68.43         TCP      54     52510 → 502 [ACK] Seq=232 Ack=1870 Win=1025 Len=0
+
+Frame 53: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 232, Ack: 1870, Len: 0

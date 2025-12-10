@@ -1,0 +1,1907 @@
+Frame 12: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.024839000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.024839000 seconds
+    [Time delta from previous captured frame: 0.000565000 seconds]
+    [Time delta from previous displayed frame: 0.000565000 seconds]
+    [Time since reference or first frame: 1.020682000 seconds]
+    Frame Number: 12
+    Frame Length: 75 bytes (600 bits)
+    Capture Length: 75 bytes (600 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:mbtcp:modbus]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+    Destination: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 61
+    Identification: 0x895f (35167)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x67a1 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.62
+    Destination Address: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 34, Ack: 268, Len: 21
+    Source Port: 52510
+    Destination Port: 502
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 21]
+    Sequence Number: 34    (relative sequence number)
+    Sequence Number (raw): 976077945
+    [Next Sequence Number: 55    (relative sequence number)]
+    Acknowledgment Number: 268    (relative ack number)
+    Acknowledgment number (raw): 2592778326
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 1025
+    [Calculated window size: 1025]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0xc981 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.191933000 seconds]
+        [Time since previous frame in this TCP stream: 0.000565000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 11]
+        [The RTT to ACK the segment was: 0.000565000 seconds]
+        [Bytes in flight: 21]
+        [Bytes sent since last PSH flag: 21]
+    TCP payload (21 bytes)
+    [PDU Size: 21]
+Modbus/TCP
+    Transaction Identifier: 14753
+    Protocol Identifier: 0
+    Length: 15
+    Unit Identifier: 1
+Modbus
+    .001 0000 = Function Code: Write Multiple Registers (16)
+    Reference Number: 24576
+    Word Count: 4
+    Byte Count: 8
+    Register 24576 (UINT16): 0
+        Register Number: 24576
+        Register Value (UINT16): 0
+    Register 24577 (UINT16): 2048
+        Register Number: 24577
+        Register Value (UINT16): 2048
+    Register 24578 (UINT16): 0
+        Register Number: 24578
+        Register Value (UINT16): 0
+    Register 24579 (UINT16): 4389
+        Register Number: 24579
+        Register Value (UINT16): 4389
+
+
+
+Frame 13: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.028107000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.028107000 seconds
+    [Time delta from previous captured frame: 0.003268000 seconds]
+    [Time delta from previous displayed frame: 0.003268000 seconds]
+    [Time since reference or first frame: 1.023950000 seconds]
+    Frame Number: 13
+    Frame Length: 54 bytes (432 bits)
+    Capture Length: 54 bytes (432 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+    Destination: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 40
+    Identification: 0x7efb (32507)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xb21a [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.43
+    Destination Address: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 268, Ack: 55, Len: 0
+    Source Port: 502
+    Destination Port: 52510
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 0]
+    Sequence Number: 268    (relative sequence number)
+    Sequence Number (raw): 2592778326
+    [Next Sequence Number: 268    (relative sequence number)]
+    Acknowledgment Number: 55    (relative ack number)
+    Acknowledgment number (raw): 976077966
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window: 457
+    [Calculated window size: 457]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x939f [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.195201000 seconds]
+        [Time since previous frame in this TCP stream: 0.003268000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 12]
+        [The RTT to ACK the segment was: 0.003268000 seconds]
+
+
+Frame 14: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.092131000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.092131000 seconds
+    [Time delta from previous captured frame: 0.064024000 seconds]
+    [Time delta from previous displayed frame: 0.064024000 seconds]
+    [Time since reference or first frame: 1.087974000 seconds]
+    Frame Number: 14
+    Frame Length: 66 bytes (528 bits)
+    Capture Length: 66 bytes (528 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:mbtcp:modbus]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+    Destination: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 52
+    Identification: 0x7efc (32508)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xb20d [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.43
+    Destination Address: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 268, Ack: 55, Len: 12
+    Source Port: 502
+    Destination Port: 52510
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 12]
+    Sequence Number: 268    (relative sequence number)
+    Sequence Number (raw): 2592778326
+    [Next Sequence Number: 280    (relative sequence number)]
+    Acknowledgment Number: 55    (relative ack number)
+    Acknowledgment number (raw): 976077966
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 457
+    [Calculated window size: 457]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0xf8cf [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.259225000 seconds]
+        [Time since previous frame in this TCP stream: 0.064024000 seconds]
+    [SEQ/ACK analysis]
+        [Bytes in flight: 12]
+        [Bytes sent since last PSH flag: 12]
+    TCP payload (12 bytes)
+    [PDU Size: 12]
+Modbus/TCP
+    Transaction Identifier: 14753
+    Protocol Identifier: 0
+    Length: 6
+    Unit Identifier: 1
+Modbus
+    .001 0000 = Function Code: Write Multiple Registers (16)
+    [Request Frame: 12]
+    [Time from request: 0.067292000 seconds]
+    Reference Number: 24576
+    Word Count: 4
+
+
+
+Frame 15: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.143099000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.143099000 seconds
+    [Time delta from previous captured frame: 0.050968000 seconds]
+    [Time delta from previous displayed frame: 0.050968000 seconds]
+    [Time since reference or first frame: 1.138942000 seconds]
+    Frame Number: 15
+    Frame Length: 66 bytes (528 bits)
+    Capture Length: 66 bytes (528 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:mbtcp:modbus]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+    Destination: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 52
+    Identification: 0x8960 (35168)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x67a9 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.62
+    Destination Address: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 55, Ack: 280, Len: 12
+    Source Port: 52510
+    Destination Port: 502
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 12]
+    Sequence Number: 55    (relative sequence number)
+    Sequence Number (raw): 976077966
+    [Next Sequence Number: 67    (relative sequence number)]
+    Acknowledgment Number: 280    (relative ack number)
+    Acknowledgment number (raw): 2592778338
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 1025
+    [Calculated window size: 1025]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0xf61f [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.310193000 seconds]
+        [Time since previous frame in this TCP stream: 0.050968000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 14]
+        [The RTT to ACK the segment was: 0.050968000 seconds]
+        [Bytes in flight: 12]
+        [Bytes sent since last PSH flag: 12]
+    TCP payload (12 bytes)
+    [PDU Size: 12]
+Modbus/TCP
+    Transaction Identifier: 14754
+    Protocol Identifier: 0
+    Length: 6
+    Unit Identifier: 1
+Modbus
+    .000 0011 = Function Code: Read Holding Registers (3)
+    Reference Number: 24577
+    Word Count: 123
+
+
+
+Frame 16: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.146132000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.146132000 seconds
+    [Time delta from previous captured frame: 0.003033000 seconds]
+    [Time delta from previous displayed frame: 0.003033000 seconds]
+    [Time since reference or first frame: 1.141975000 seconds]
+    Frame Number: 16
+    Frame Length: 54 bytes (432 bits)
+    Capture Length: 54 bytes (432 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+    Destination: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 40
+    Identification: 0x7efd (32509)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xb218 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.43
+    Destination Address: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 280, Ack: 67, Len: 0
+    Source Port: 502
+    Destination Port: 52510
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 0]
+    Sequence Number: 280    (relative sequence number)
+    Sequence Number (raw): 2592778338
+    [Next Sequence Number: 280    (relative sequence number)]
+    Acknowledgment Number: 67    (relative ack number)
+    Acknowledgment number (raw): 976077978
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window: 457
+    [Calculated window size: 457]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x9387 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.313226000 seconds]
+        [Time since previous frame in this TCP stream: 0.003033000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 15]
+        [The RTT to ACK the segment was: 0.003033000 seconds]
+
+
+Frame 17: 309 bytes on wire (2472 bits), 309 bytes captured (2472 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.241296000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.241296000 seconds
+    [Time delta from previous captured frame: 0.095164000 seconds]
+    [Time delta from previous displayed frame: 0.095164000 seconds]
+    [Time since reference or first frame: 1.237139000 seconds]
+    Frame Number: 17
+    Frame Length: 309 bytes (2472 bits)
+    Capture Length: 309 bytes (2472 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:mbtcp:modbus]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+    Destination: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 295
+    Identification: 0x7efe (32510)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xb118 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.43
+    Destination Address: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 280, Ack: 67, Len: 255
+    Source Port: 502
+    Destination Port: 52510
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 255]
+    Sequence Number: 280    (relative sequence number)
+    Sequence Number (raw): 2592778338
+    [Next Sequence Number: 535    (relative sequence number)]
+    Acknowledgment Number: 67    (relative ack number)
+    Acknowledgment number (raw): 976077978
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 457
+    [Calculated window size: 457]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x4b8e [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.408390000 seconds]
+        [Time since previous frame in this TCP stream: 0.095164000 seconds]
+    [SEQ/ACK analysis]
+        [Bytes in flight: 255]
+        [Bytes sent since last PSH flag: 255]
+    TCP payload (255 bytes)
+    [PDU Size: 255]
+Modbus/TCP
+    Transaction Identifier: 14754
+    Protocol Identifier: 0
+    Length: 249
+    Unit Identifier: 1
+Modbus
+    .000 0011 = Function Code: Read Holding Registers (3)
+    [Request Frame: 15]
+    [Time from request: 0.098197000 seconds]
+    Byte Count: 246
+    Register 24577 (UINT16): 2059
+        Register Number: 24577
+        Register Value (UINT16): 2059
+    Register 24578 (UINT16): 0
+        Register Number: 24578
+        Register Value (UINT16): 0
+    Register 24579 (UINT16): 4389
+        Register Number: 24579
+        Register Value (UINT16): 4389
+    Register 24580 (UINT16): 0
+        Register Number: 24580
+        Register Value (UINT16): 0
+    Register 24581 (UINT16): 4390
+        Register Number: 24581
+        Register Value (UINT16): 4390
+    Register 24582 (UINT16): 6412
+        Register Number: 24582
+        Register Value (UINT16): 6412
+    Register 24583 (UINT16): 2067
+        Register Number: 24583
+        Register Value (UINT16): 2067
+    Register 24584 (UINT16): 6400
+        Register Number: 24584
+        Register Value (UINT16): 6400
+    Register 24585 (UINT16): 5
+        Register Number: 24585
+        Register Value (UINT16): 5
+    Register 24586 (UINT16): 53431
+        Register Number: 24586
+        Register Value (UINT16): 53431
+    Register 24587 (UINT16): 1
+        Register Number: 24587
+        Register Value (UINT16): 1
+    Register 24588 (UINT16): 33998
+        Register Number: 24588
+        Register Value (UINT16): 33998
+    Register 24589 (UINT16): 0
+        Register Number: 24589
+        Register Value (UINT16): 0
+    Register 24590 (UINT16): 33
+        Register Number: 24590
+        Register Value (UINT16): 33
+    Register 24591 (UINT16): 8
+        Register Number: 24591
+        Register Value (UINT16): 8
+    Register 24592 (UINT16): 17961
+        Register Number: 24592
+        Register Value (UINT16): 17961
+    Register 24593 (UINT16): 39991
+        Register Number: 24593
+        Register Value (UINT16): 39991
+    Register 24594 (UINT16): 0
+        Register Number: 24594
+        Register Value (UINT16): 0
+    Register 24595 (UINT16): 4391
+        Register Number: 24595
+        Register Value (UINT16): 4391
+    Register 24596 (UINT16): 6412
+        Register Number: 24596
+        Register Value (UINT16): 6412
+    Register 24597 (UINT16): 2067
+        Register Number: 24597
+        Register Value (UINT16): 2067
+    Register 24598 (UINT16): 6656
+        Register Number: 24598
+        Register Value (UINT16): 6656
+    Register 24599 (UINT16): 5
+        Register Number: 24599
+        Register Value (UINT16): 5
+    Register 24600 (UINT16): 53434
+        Register Number: 24600
+        Register Value (UINT16): 53434
+    Register 24601 (UINT16): 1
+        Register Number: 24601
+        Register Value (UINT16): 1
+    Register 24602 (UINT16): 33998
+        Register Number: 24602
+        Register Value (UINT16): 33998
+    Register 24603 (UINT16): 0
+        Register Number: 24603
+        Register Value (UINT16): 0
+    Register 24604 (UINT16): 33
+        Register Number: 24604
+        Register Value (UINT16): 33
+    Register 24605 (UINT16): 8
+        Register Number: 24605
+        Register Value (UINT16): 8
+    Register 24606 (UINT16): 17965
+        Register Number: 24606
+        Register Value (UINT16): 17965
+    Register 24607 (UINT16): 40493
+        Register Number: 24607
+        Register Value (UINT16): 40493
+    Register 24608 (UINT16): 0
+        Register Number: 24608
+        Register Value (UINT16): 0
+    Register 24609 (UINT16): 4392
+        Register Number: 24609
+        Register Value (UINT16): 4392
+    Register 24610 (UINT16): 6412
+        Register Number: 24610
+        Register Value (UINT16): 6412
+    Register 24611 (UINT16): 2067
+        Register Number: 24611
+        Register Value (UINT16): 2067
+    Register 24612 (UINT16): 6912
+        Register Number: 24612
+        Register Value (UINT16): 6912
+    Register 24613 (UINT16): 5
+        Register Number: 24613
+        Register Value (UINT16): 5
+    Register 24614 (UINT16): 53437
+        Register Number: 24614
+        Register Value (UINT16): 53437
+    Register 24615 (UINT16): 1
+        Register Number: 24615
+        Register Value (UINT16): 1
+    Register 24616 (UINT16): 33998
+        Register Number: 24616
+        Register Value (UINT16): 33998
+    Register 24617 (UINT16): 0
+        Register Number: 24617
+        Register Value (UINT16): 0
+    Register 24618 (UINT16): 33
+        Register Number: 24618
+        Register Value (UINT16): 33
+    Register 24619 (UINT16): 8
+        Register Number: 24619
+        Register Value (UINT16): 8
+    Register 24620 (UINT16): 17968
+        Register Number: 24620
+        Register Value (UINT16): 17968
+    Register 24621 (UINT16): 3118
+        Register Number: 24621
+        Register Value (UINT16): 3118
+    Register 24622 (UINT16): 0
+        Register Number: 24622
+        Register Value (UINT16): 0
+    Register 24623 (UINT16): 4393
+        Register Number: 24623
+        Register Value (UINT16): 4393
+    Register 24624 (UINT16): 6412
+        Register Number: 24624
+        Register Value (UINT16): 6412
+    Register 24625 (UINT16): 2067
+        Register Number: 24625
+        Register Value (UINT16): 2067
+    Register 24626 (UINT16): 7168
+        Register Number: 24626
+        Register Value (UINT16): 7168
+    Register 24627 (UINT16): 5
+        Register Number: 24627
+        Register Value (UINT16): 5
+    Register 24628 (UINT16): 53440
+        Register Number: 24628
+        Register Value (UINT16): 53440
+    Register 24629 (UINT16): 1
+        Register Number: 24629
+        Register Value (UINT16): 1
+    Register 24630 (UINT16): 33998
+        Register Number: 24630
+        Register Value (UINT16): 33998
+    Register 24631 (UINT16): 0
+        Register Number: 24631
+        Register Value (UINT16): 0
+    Register 24632 (UINT16): 33
+        Register Number: 24632
+        Register Value (UINT16): 33
+    Register 24633 (UINT16): 8
+        Register Number: 24633
+        Register Value (UINT16): 8
+    Register 24634 (UINT16): 17972
+        Register Number: 24634
+        Register Value (UINT16): 17972
+    Register 24635 (UINT16): 16530
+        Register Number: 24635
+        Register Value (UINT16): 16530
+    Register 24636 (UINT16): 0
+        Register Number: 24636
+        Register Value (UINT16): 0
+    Register 24637 (UINT16): 4394
+        Register Number: 24637
+        Register Value (UINT16): 4394
+    Register 24638 (UINT16): 6412
+        Register Number: 24638
+        Register Value (UINT16): 6412
+    Register 24639 (UINT16): 2067
+        Register Number: 24639
+        Register Value (UINT16): 2067
+    Register 24640 (UINT16): 7424
+        Register Number: 24640
+        Register Value (UINT16): 7424
+    Register 24641 (UINT16): 5
+        Register Number: 24641
+        Register Value (UINT16): 5
+    Register 24642 (UINT16): 53443
+        Register Number: 24642
+        Register Value (UINT16): 53443
+    Register 24643 (UINT16): 1
+        Register Number: 24643
+        Register Value (UINT16): 1
+    Register 24644 (UINT16): 33998
+        Register Number: 24644
+        Register Value (UINT16): 33998
+    Register 24645 (UINT16): 0
+        Register Number: 24645
+        Register Value (UINT16): 0
+    Register 24646 (UINT16): 33
+        Register Number: 24646
+        Register Value (UINT16): 33
+    Register 24647 (UINT16): 8
+        Register Number: 24647
+        Register Value (UINT16): 8
+    Register 24648 (UINT16): 17975
+        Register Number: 24648
+        Register Value (UINT16): 17975
+    Register 24649 (UINT16): 46749
+        Register Number: 24649
+        Register Value (UINT16): 46749
+    Register 24650 (UINT16): 0
+        Register Number: 24650
+        Register Value (UINT16): 0
+    Register 24651 (UINT16): 4395
+        Register Number: 24651
+        Register Value (UINT16): 4395
+    Register 24652 (UINT16): 6412
+        Register Number: 24652
+        Register Value (UINT16): 6412
+    Register 24653 (UINT16): 2067
+        Register Number: 24653
+        Register Value (UINT16): 2067
+    Register 24654 (UINT16): 7680
+        Register Number: 24654
+        Register Value (UINT16): 7680
+    Register 24655 (UINT16): 5
+        Register Number: 24655
+        Register Value (UINT16): 5
+    Register 24656 (UINT16): 53446
+        Register Number: 24656
+        Register Value (UINT16): 53446
+    Register 24657 (UINT16): 1
+        Register Number: 24657
+        Register Value (UINT16): 1
+    Register 24658 (UINT16): 33998
+        Register Number: 24658
+        Register Value (UINT16): 33998
+    Register 24659 (UINT16): 0
+        Register Number: 24659
+        Register Value (UINT16): 0
+    Register 24660 (UINT16): 33
+        Register Number: 24660
+        Register Value (UINT16): 33
+    Register 24661 (UINT16): 8
+        Register Number: 24661
+        Register Value (UINT16): 8
+    Register 24662 (UINT16): 17979
+        Register Number: 24662
+        Register Value (UINT16): 17979
+    Register 24663 (UINT16): 48265
+        Register Number: 24663
+        Register Value (UINT16): 48265
+    Register 24664 (UINT16): 0
+        Register Number: 24664
+        Register Value (UINT16): 0
+    Register 24665 (UINT16): 4396
+        Register Number: 24665
+        Register Value (UINT16): 4396
+    Register 24666 (UINT16): 6412
+        Register Number: 24666
+        Register Value (UINT16): 6412
+    Register 24667 (UINT16): 2067
+        Register Number: 24667
+        Register Value (UINT16): 2067
+    Register 24668 (UINT16): 7936
+        Register Number: 24668
+        Register Value (UINT16): 7936
+    Register 24669 (UINT16): 5
+        Register Number: 24669
+        Register Value (UINT16): 5
+    Register 24670 (UINT16): 53448
+        Register Number: 24670
+        Register Value (UINT16): 53448
+    Register 24671 (UINT16): 1
+        Register Number: 24671
+        Register Value (UINT16): 1
+    Register 24672 (UINT16): 33998
+        Register Number: 24672
+        Register Value (UINT16): 33998
+    Register 24673 (UINT16): 0
+        Register Number: 24673
+        Register Value (UINT16): 0
+    Register 24674 (UINT16): 33
+        Register Number: 24674
+        Register Value (UINT16): 33
+    Register 24675 (UINT16): 8
+        Register Number: 24675
+        Register Value (UINT16): 8
+    Register 24676 (UINT16): 17983
+        Register Number: 24676
+        Register Value (UINT16): 17983
+    Register 24677 (UINT16): 46984
+        Register Number: 24677
+        Register Value (UINT16): 46984
+    Register 24678 (UINT16): 0
+        Register Number: 24678
+        Register Value (UINT16): 0
+    Register 24679 (UINT16): 4397
+        Register Number: 24679
+        Register Value (UINT16): 4397
+    Register 24680 (UINT16): 6412
+        Register Number: 24680
+        Register Value (UINT16): 6412
+    Register 24681 (UINT16): 2067
+        Register Number: 24681
+        Register Value (UINT16): 2067
+    Register 24682 (UINT16): 8192
+        Register Number: 24682
+        Register Value (UINT16): 8192
+    Register 24683 (UINT16): 5
+        Register Number: 24683
+        Register Value (UINT16): 5
+    Register 24684 (UINT16): 53451
+        Register Number: 24684
+        Register Value (UINT16): 53451
+    Register 24685 (UINT16): 1
+        Register Number: 24685
+        Register Value (UINT16): 1
+    Register 24686 (UINT16): 33998
+        Register Number: 24686
+        Register Value (UINT16): 33998
+    Register 24687 (UINT16): 0
+        Register Number: 24687
+        Register Value (UINT16): 0
+    Register 24688 (UINT16): 33
+        Register Number: 24688
+        Register Value (UINT16): 33
+    Register 24689 (UINT16): 8
+        Register Number: 24689
+        Register Value (UINT16): 8
+    Register 24690 (UINT16): 17986
+        Register Number: 24690
+        Register Value (UINT16): 17986
+    Register 24691 (UINT16): 12829
+        Register Number: 24691
+        Register Value (UINT16): 12829
+    Register 24692 (UINT16): 0
+        Register Number: 24692
+        Register Value (UINT16): 0
+    Register 24693 (UINT16): 0
+        Register Number: 24693
+        Register Value (UINT16): 0
+    Register 24694 (UINT16): 0
+        Register Number: 24694
+        Register Value (UINT16): 0
+    Register 24695 (UINT16): 0
+        Register Number: 24695
+        Register Value (UINT16): 0
+    Register 24696 (UINT16): 0
+        Register Number: 24696
+        Register Value (UINT16): 0
+    Register 24697 (UINT16): 0
+        Register Number: 24697
+        Register Value (UINT16): 0
+    Register 24698 (UINT16): 0
+        Register Number: 24698
+        Register Value (UINT16): 0
+    Register 24699 (UINT16): 0
+        Register Number: 24699
+        Register Value (UINT16): 0
+
+
+Frame 18: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.242308000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.242308000 seconds
+    [Time delta from previous captured frame: 0.001012000 seconds]
+    [Time delta from previous displayed frame: 0.001012000 seconds]
+    [Time since reference or first frame: 1.238151000 seconds]
+    Frame Number: 18
+    Frame Length: 75 bytes (600 bits)
+    Capture Length: 75 bytes (600 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:mbtcp:modbus]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+    Destination: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 61
+    Identification: 0x8961 (35169)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x679f [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.62
+    Destination Address: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 67, Ack: 535, Len: 21
+    Source Port: 52510
+    Destination Port: 502
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 21]
+    Sequence Number: 67    (relative sequence number)
+    Sequence Number (raw): 976077978
+    [Next Sequence Number: 88    (relative sequence number)]
+    Acknowledgment Number: 535    (relative ack number)
+    Acknowledgment number (raw): 2592778593
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 1024
+    [Calculated window size: 1024]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0xc054 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.409402000 seconds]
+        [Time since previous frame in this TCP stream: 0.001012000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 17]
+        [The RTT to ACK the segment was: 0.001012000 seconds]
+        [Bytes in flight: 21]
+        [Bytes sent since last PSH flag: 21]
+    TCP payload (21 bytes)
+    [PDU Size: 21]
+Modbus/TCP
+    Transaction Identifier: 14755
+    Protocol Identifier: 0
+    Length: 15
+    Unit Identifier: 1
+Modbus
+    .001 0000 = Function Code: Write Multiple Registers (16)
+    Reference Number: 24576
+    Word Count: 4
+    Byte Count: 8
+    Register 24576 (UINT16): 0
+        Register Number: 24576
+        Register Value (UINT16): 0
+    Register 24577 (UINT16): 2048
+        Register Number: 24577
+        Register Value (UINT16): 2048
+    Register 24578 (UINT16): 0
+        Register Number: 24578
+        Register Value (UINT16): 0
+    Register 24579 (UINT16): 4397
+        Register Number: 24579
+        Register Value (UINT16): 4397
+
+
+
+
+Frame 19: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.246507000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.246507000 seconds
+    [Time delta from previous captured frame: 0.004199000 seconds]
+    [Time delta from previous displayed frame: 0.004199000 seconds]
+    [Time since reference or first frame: 1.242350000 seconds]
+    Frame Number: 19
+    Frame Length: 54 bytes (432 bits)
+    Capture Length: 54 bytes (432 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+    Destination: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 40
+    Identification: 0x7eff (32511)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xb216 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.43
+    Destination Address: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 535, Ack: 88, Len: 0
+    Source Port: 502
+    Destination Port: 52510
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 0]
+    Sequence Number: 535    (relative sequence number)
+    Sequence Number (raw): 2592778593
+    [Next Sequence Number: 535    (relative sequence number)]
+    Acknowledgment Number: 88    (relative ack number)
+    Acknowledgment number (raw): 976077999
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window: 457
+    [Calculated window size: 457]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x9273 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.413601000 seconds]
+        [Time since previous frame in this TCP stream: 0.004199000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 18]
+        [The RTT to ACK the segment was: 0.004199000 seconds]
+
+
+
+Frame 20: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.294278000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.294278000 seconds
+    [Time delta from previous captured frame: 0.047771000 seconds]
+    [Time delta from previous displayed frame: 0.047771000 seconds]
+    [Time since reference or first frame: 1.290121000 seconds]
+    Frame Number: 20
+    Frame Length: 66 bytes (528 bits)
+    Capture Length: 66 bytes (528 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:mbtcp:modbus]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+    Destination: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 52
+    Identification: 0x7f00 (32512)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xb209 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.43
+    Destination Address: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 535, Ack: 88, Len: 12
+    Source Port: 502
+    Destination Port: 52510
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 12]
+    Sequence Number: 535    (relative sequence number)
+    Sequence Number (raw): 2592778593
+    [Next Sequence Number: 547    (relative sequence number)]
+    Acknowledgment Number: 88    (relative ack number)
+    Acknowledgment number (raw): 976077999
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 457
+    [Calculated window size: 457]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0xf7a1 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.461372000 seconds]
+        [Time since previous frame in this TCP stream: 0.047771000 seconds]
+    [SEQ/ACK analysis]
+        [Bytes in flight: 12]
+        [Bytes sent since last PSH flag: 12]
+    TCP payload (12 bytes)
+    [PDU Size: 12]
+Modbus/TCP
+    Transaction Identifier: 14755
+    Protocol Identifier: 0
+    Length: 6
+    Unit Identifier: 1
+Modbus
+    .001 0000 = Function Code: Write Multiple Registers (16)
+    [Request Frame: 18]
+    [Time from request: 0.051970000 seconds]
+    Reference Number: 24576
+    Word Count: 4
+
+
+Frame 21: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.344653000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.344653000 seconds
+    [Time delta from previous captured frame: 0.050375000 seconds]
+    [Time delta from previous displayed frame: 0.050375000 seconds]
+    [Time since reference or first frame: 1.340496000 seconds]
+    Frame Number: 21
+    Frame Length: 66 bytes (528 bits)
+    Capture Length: 66 bytes (528 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:mbtcp:modbus]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: IntelCor_ca:16:ab (cc:15:31:ca:16:ab), Dst: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+    Destination: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.62, Dst: 192.168.68.43
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 52
+    Identification: 0x8962 (35170)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x67a7 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.62
+    Destination Address: 192.168.68.43
+Transmission Control Protocol, Src Port: 52510, Dst Port: 502, Seq: 88, Ack: 547, Len: 12
+    Source Port: 52510
+    Destination Port: 502
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 12]
+    Sequence Number: 88    (relative sequence number)
+    Sequence Number (raw): 976077999
+    [Next Sequence Number: 100    (relative sequence number)]
+    Acknowledgment Number: 547    (relative ack number)
+    Acknowledgment number (raw): 2592778605
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 1024
+    [Calculated window size: 1024]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0xf4f2 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.511747000 seconds]
+        [Time since previous frame in this TCP stream: 0.050375000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 20]
+        [The RTT to ACK the segment was: 0.050375000 seconds]
+        [Bytes in flight: 12]
+        [Bytes sent since last PSH flag: 12]
+    TCP payload (12 bytes)
+    [PDU Size: 12]
+Modbus/TCP
+    Transaction Identifier: 14756
+    Protocol Identifier: 0
+    Length: 6
+    Unit Identifier: 1
+Modbus
+    .000 0011 = Function Code: Read Holding Registers (3)
+    Reference Number: 24577
+    Word Count: 123
+
+
+
+Frame 22: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.348802000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.348802000 seconds
+    [Time delta from previous captured frame: 0.004149000 seconds]
+    [Time delta from previous displayed frame: 0.004149000 seconds]
+    [Time since reference or first frame: 1.344645000 seconds]
+    Frame Number: 22
+    Frame Length: 54 bytes (432 bits)
+    Capture Length: 54 bytes (432 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+    Destination: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 40
+    Identification: 0x7f01 (32513)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xb214 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.43
+    Destination Address: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 547, Ack: 100, Len: 0
+    Source Port: 502
+    Destination Port: 52510
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 0]
+    Sequence Number: 547    (relative sequence number)
+    Sequence Number (raw): 2592778605
+    [Next Sequence Number: 547    (relative sequence number)]
+    Acknowledgment Number: 100    (relative ack number)
+    Acknowledgment number (raw): 976078011
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window: 457
+    [Calculated window size: 457]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x925b [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.515896000 seconds]
+        [Time since previous frame in this TCP stream: 0.004149000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 21]
+        [The RTT to ACK the segment was: 0.004149000 seconds]
+
+
+
+Frame 23: 309 bytes on wire (2472 bits), 309 bytes captured (2472 bits) on interface \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}, id 0
+    Interface id: 0 (\Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B})
+        Interface name: \Device\NPF_{8FA034AB-C904-4DAD-85E3-49624595590B}
+        Interface description: WiFi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Dec  8, 2025 20:06:05.456175000 South Africa Standard Time
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1765217165.456175000 seconds
+    [Time delta from previous captured frame: 0.107373000 seconds]
+    [Time delta from previous displayed frame: 0.107373000 seconds]
+    [Time since reference or first frame: 1.452018000 seconds]
+    Frame Number: 23
+    Frame Length: 309 bytes (2472 bits)
+    Capture Length: 309 bytes (2472 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:mbtcp:modbus]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 30:7a:57:00:15:88 (30:7a:57:00:15:88), Dst: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+    Destination: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        Address: IntelCor_ca:16:ab (cc:15:31:ca:16:ab)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        Address: 30:7a:57:00:15:88 (30:7a:57:00:15:88)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.68.43, Dst: 192.168.68.62
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 295
+    Identification: 0x7f02 (32514)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xb114 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.68.43
+    Destination Address: 192.168.68.62
+Transmission Control Protocol, Src Port: 502, Dst Port: 52510, Seq: 547, Ack: 100, Len: 255
+    Source Port: 502
+    Destination Port: 52510
+    [Stream index: 2]
+    [Conversation completeness: Incomplete (12)]
+    [TCP Segment Len: 255]
+    Sequence Number: 547    (relative sequence number)
+    Sequence Number (raw): 2592778605
+    [Next Sequence Number: 802    (relative sequence number)]
+    Acknowledgment Number: 100    (relative ack number)
+    Acknowledgment number (raw): 976078011
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 457
+    [Calculated window size: 457]
+    [Window size scaling factor: -1 (unknown)]
+    Checksum: 0x42bc [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.623269000 seconds]
+        [Time since previous frame in this TCP stream: 0.107373000 seconds]
+    [SEQ/ACK analysis]
+        [Bytes in flight: 255]
+        [Bytes sent since last PSH flag: 255]
+    TCP payload (255 bytes)
+    [PDU Size: 255]
+Modbus/TCP
+    Transaction Identifier: 14756
+    Protocol Identifier: 0
+    Length: 249
+    Unit Identifier: 1
+Modbus
+    .000 0011 = Function Code: Read Holding Registers (3)
+    [Request Frame: 21]
+    [Time from request: 0.111522000 seconds]
+    Byte Count: 246
+    Register 24577 (UINT16): 2059
+        Register Number: 24577
+        Register Value (UINT16): 2059
+    Register 24578 (UINT16): 0
+        Register Number: 24578
+        Register Value (UINT16): 0
+    Register 24579 (UINT16): 4397
+        Register Number: 24579
+        Register Value (UINT16): 4397
+    Register 24580 (UINT16): 0
+        Register Number: 24580
+        Register Value (UINT16): 0
+    Register 24581 (UINT16): 4398
+        Register Number: 24581
+        Register Value (UINT16): 4398
+    Register 24582 (UINT16): 6412
+        Register Number: 24582
+        Register Value (UINT16): 6412
+    Register 24583 (UINT16): 2067
+        Register Number: 24583
+        Register Value (UINT16): 2067
+    Register 24584 (UINT16): 8448
+        Register Number: 24584
+        Register Value (UINT16): 8448
+    Register 24585 (UINT16): 5
+        Register Number: 24585
+        Register Value (UINT16): 5
+    Register 24586 (UINT16): 53454
+        Register Number: 24586
+        Register Value (UINT16): 53454
+    Register 24587 (UINT16): 1
+        Register Number: 24587
+        Register Value (UINT16): 1
+    Register 24588 (UINT16): 33998
+        Register Number: 24588
+        Register Value (UINT16): 33998
+    Register 24589 (UINT16): 0
+        Register Number: 24589
+        Register Value (UINT16): 0
+    Register 24590 (UINT16): 33
+        Register Number: 24590
+        Register Value (UINT16): 33
+    Register 24591 (UINT16): 8
+        Register Number: 24591
+        Register Value (UINT16): 8
+    Register 24592 (UINT16): 17990
+        Register Number: 24592
+        Register Value (UINT16): 17990
+    Register 24593 (UINT16): 61974
+        Register Number: 24593
+        Register Value (UINT16): 61974
+    Register 24594 (UINT16): 0
+        Register Number: 24594
+        Register Value (UINT16): 0
+    Register 24595 (UINT16): 4399
+        Register Number: 24595
+        Register Value (UINT16): 4399
+    Register 24596 (UINT16): 6412
+        Register Number: 24596
+        Register Value (UINT16): 6412
+    Register 24597 (UINT16): 2067
+        Register Number: 24597
+        Register Value (UINT16): 2067
+    Register 24598 (UINT16): 8704
+        Register Number: 24598
+        Register Value (UINT16): 8704
+    Register 24599 (UINT16): 5
+        Register Number: 24599
+        Register Value (UINT16): 5
+    Register 24600 (UINT16): 53457
+        Register Number: 24600
+        Register Value (UINT16): 53457
+    Register 24601 (UINT16): 1
+        Register Number: 24601
+        Register Value (UINT16): 1
+    Register 24602 (UINT16): 33998
+        Register Number: 24602
+        Register Value (UINT16): 33998
+    Register 24603 (UINT16): 0
+        Register Number: 24603
+        Register Value (UINT16): 0
+    Register 24604 (UINT16): 33
+        Register Number: 24604
+        Register Value (UINT16): 33
+    Register 24605 (UINT16): 8
+        Register Number: 24605
+        Register Value (UINT16): 8
+    Register 24606 (UINT16): 17994
+        Register Number: 24606
+        Register Value (UINT16): 17994
+    Register 24607 (UINT16): 8729
+        Register Number: 24607
+        Register Value (UINT16): 8729
+    Register 24608 (UINT16): 0
+        Register Number: 24608
+        Register Value (UINT16): 0
+    Register 24609 (UINT16): 4400
+        Register Number: 24609
+        Register Value (UINT16): 4400
+    Register 24610 (UINT16): 6412
+        Register Number: 24610
+        Register Value (UINT16): 6412
+    Register 24611 (UINT16): 2067
+        Register Number: 24611
+        Register Value (UINT16): 2067
+    Register 24612 (UINT16): 8960
+        Register Number: 24612
+        Register Value (UINT16): 8960
+    Register 24613 (UINT16): 5
+        Register Number: 24613
+        Register Value (UINT16): 5
+    Register 24614 (UINT16): 53460
+        Register Number: 24614
+        Register Value (UINT16): 53460
+    Register 24615 (UINT16): 1
+        Register Number: 24615
+        Register Value (UINT16): 1
+    Register 24616 (UINT16): 33998
+        Register Number: 24616
+        Register Value (UINT16): 33998
+    Register 24617 (UINT16): 0
+        Register Number: 24617
+        Register Value (UINT16): 0
+    Register 24618 (UINT16): 33
+        Register Number: 24618
+        Register Value (UINT16): 33
+    Register 24619 (UINT16): 8
+        Register Number: 24619
+        Register Value (UINT16): 8
+    Register 24620 (UINT16): 17997
+        Register Number: 24620
+        Register Value (UINT16): 17997
+    Register 24621 (UINT16): 4626
+        Register Number: 24621
+        Register Value (UINT16): 4626
+    Register 24622 (UINT16): 0
+        Register Number: 24622
+        Register Value (UINT16): 0
+    Register 24623 (UINT16): 4401
+        Register Number: 24623
+        Register Value (UINT16): 4401
+    Register 24624 (UINT16): 6412
+        Register Number: 24624
+        Register Value (UINT16): 6412
+    Register 24625 (UINT16): 2067
+        Register Number: 24625
+        Register Value (UINT16): 2067
+    Register 24626 (UINT16): 9216
+        Register Number: 24626
+        Register Value (UINT16): 9216
+    Register 24627 (UINT16): 5
+        Register Number: 24627
+        Register Value (UINT16): 5
+    Register 24628 (UINT16): 53463
+        Register Number: 24628
+        Register Value (UINT16): 53463
+    Register 24629 (UINT16): 1
+        Register Number: 24629
+        Register Value (UINT16): 1
+    Register 24630 (UINT16): 33998
+        Register Number: 24630
+        Register Value (UINT16): 33998
+    Register 24631 (UINT16): 0
+        Register Number: 24631
+        Register Value (UINT16): 0
+    Register 24632 (UINT16): 33
+        Register Number: 24632
+        Register Value (UINT16): 33
+    Register 24633 (UINT16): 8
+        Register Number: 24633
+        Register Value (UINT16): 8
+    Register 24634 (UINT16): 18001
+        Register Number: 24634
+        Register Value (UINT16): 18001
+    Register 24635 (UINT16): 46359
+        Register Number: 24635
+        Register Value (UINT16): 46359
+    Register 24636 (UINT16): 0
+        Register Number: 24636
+        Register Value (UINT16): 0
+    Register 24637 (UINT16): 4402
+        Register Number: 24637
+        Register Value (UINT16): 4402
+    Register 24638 (UINT16): 6412
+        Register Number: 24638
+        Register Value (UINT16): 6412
+    Register 24639 (UINT16): 2067
+        Register Number: 24639
+        Register Value (UINT16): 2067
+    Register 24640 (UINT16): 9472
+        Register Number: 24640
+        Register Value (UINT16): 9472
+    Register 24641 (UINT16): 5
+        Register Number: 24641
+        Register Value (UINT16): 5
+    Register 24642 (UINT16): 53465
+        Register Number: 24642
+        Register Value (UINT16): 53465
+    Register 24643 (UINT16): 1
+        Register Number: 24643
+        Register Value (UINT16): 1
+    Register 24644 (UINT16): 33998
+        Register Number: 24644
+        Register Value (UINT16): 33998
+    Register 24645 (UINT16): 0
+        Register Number: 24645
+        Register Value (UINT16): 0
+    Register 24646 (UINT16): 33
+        Register Number: 24646
+        Register Value (UINT16): 33
+    Register 24647 (UINT16): 8
+        Register Number: 24647
+        Register Value (UINT16): 8
+    Register 24648 (UINT16): 18004
+        Register Number: 24648
+        Register Value (UINT16): 18004
+    Register 24649 (UINT16): 11799
+        Register Number: 24649
+        Register Value (UINT16): 11799
+    Register 24650 (UINT16): 0
+        Register Number: 24650
+        Register Value (UINT16): 0
+    Register 24651 (UINT16): 4403
+        Register Number: 24651
+        Register Value (UINT16): 4403
+    Register 24652 (UINT16): 6412
+        Register Number: 24652
+        Register Value (UINT16): 6412
+    Register 24653 (UINT16): 2067
+        Register Number: 24653
+        Register Value (UINT16): 2067
+    Register 24654 (UINT16): 9728
+        Register Number: 24654
+        Register Value (UINT16): 9728
+    Register 24655 (UINT16): 5
+        Register Number: 24655
+        Register Value (UINT16): 5
+    Register 24656 (UINT16): 53468
+        Register Number: 24656
+        Register Value (UINT16): 53468
+    Register 24657 (UINT16): 1
+        Register Number: 24657
+        Register Value (UINT16): 1
+    Register 24658 (UINT16): 33998
+        Register Number: 24658
+        Register Value (UINT16): 33998
+    Register 24659 (UINT16): 0
+        Register Number: 24659
+        Register Value (UINT16): 0
+    Register 24660 (UINT16): 33
+        Register Number: 24660
+        Register Value (UINT16): 33
+    Register 24661 (UINT16): 8
+        Register Number: 24661
+        Register Value (UINT16): 8
+    Register 24662 (UINT16): 18008
+        Register Number: 24662
+        Register Value (UINT16): 18008
+    Register 24663 (UINT16): 9219
+        Register Number: 24663
+        Register Value (UINT16): 9219
+    Register 24664 (UINT16): 0
+        Register Number: 24664
+        Register Value (UINT16): 0
+    Register 24665 (UINT16): 4404
+        Register Number: 24665
+        Register Value (UINT16): 4404
+    Register 24666 (UINT16): 6412
+        Register Number: 24666
+        Register Value (UINT16): 6412
+    Register 24667 (UINT16): 2067
+        Register Number: 24667
+        Register Value (UINT16): 2067
+    Register 24668 (UINT16): 9984
+        Register Number: 24668
+        Register Value (UINT16): 9984
+    Register 24669 (UINT16): 5
+        Register Number: 24669
+        Register Value (UINT16): 5
+    Register 24670 (UINT16): 53471
+        Register Number: 24670
+        Register Value (UINT16): 53471
+    Register 24671 (UINT16): 1
+        Register Number: 24671
+        Register Value (UINT16): 1
+    Register 24672 (UINT16): 33998
+        Register Number: 24672
+        Register Value (UINT16): 33998
+    Register 24673 (UINT16): 0
+        Register Number: 24673
+        Register Value (UINT16): 0
+    Register 24674 (UINT16): 33
+        Register Number: 24674
+        Register Value (UINT16): 33
+    Register 24675 (UINT16): 8
+        Register Number: 24675
+        Register Value (UINT16): 8
+    Register 24676 (UINT16): 18012
+        Register Number: 24676
+        Register Value (UINT16): 18012
+    Register 24677 (UINT16): 57870
+        Register Number: 24677
+        Register Value (UINT16): 57870
+    Register 24678 (UINT16): 0
+        Register Number: 24678
+        Register Value (UINT16): 0
+    Register 24679 (UINT16): 4405
+        Register Number: 24679
+        Register Value (UINT16): 4405
+    Register 24680 (UINT16): 6412
+        Register Number: 24680
+        Register Value (UINT16): 6412
+    Register 24681 (UINT16): 2067
+        Register Number: 24681
+        Register Value (UINT16): 2067
+    Register 24682 (UINT16): 10240
+        Register Number: 24682
+        Register Value (UINT16): 10240
+    Register 24683 (UINT16): 5
+        Register Number: 24683
+        Register Value (UINT16): 5
+    Register 24684 (UINT16): 53474
+        Register Number: 24684
+        Register Value (UINT16): 53474
+    Register 24685 (UINT16): 1
+        Register Number: 24685
+        Register Value (UINT16): 1
+    Register 24686 (UINT16): 33998
+        Register Number: 24686
+        Register Value (UINT16): 33998
+    Register 24687 (UINT16): 0
+        Register Number: 24687
+        Register Value (UINT16): 0
+    Register 24688 (UINT16): 33
+        Register Number: 24688
+        Register Value (UINT16): 33
+    Register 24689 (UINT16): 8
+        Register Number: 24689
+        Register Value (UINT16): 8
+    Register 24690 (UINT16): 18015
+        Register Number: 24690
+        Register Value (UINT16): 18015
+    Register 24691 (UINT16): 13969
+        Register Number: 24691
+        Register Value (UINT16): 13969
+    Register 24692 (UINT16): 0
+        Register Number: 24692
+        Register Value (UINT16): 0
+    Register 24693 (UINT16): 0
+        Register Number: 24693
+        Register Value (UINT16): 0
+    Register 24694 (UINT16): 0
+        Register Number: 24694
+        Register Value (UINT16): 0
+    Register 24695 (UINT16): 0
+        Register Number: 24695
+        Register Value (UINT16): 0
+    Register 24696 (UINT16): 0
+        Register Number: 24696
+        Register Value (UINT16): 0
+    Register 24697 (UINT16): 0
+        Register Number: 24697
+        Register Value (UINT16): 0
+    Register 24698 (UINT16): 0
+        Register Number: 24698
+        Register Value (UINT16): 0
+    Register 24699 (UINT16): 0
+        Register Number: 24699
+        Register Value (UINT16): 0
+
+
+
