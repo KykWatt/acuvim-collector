@@ -1,18 +1,9 @@
-diff - -git
-a / acuvim.py
-b / acuvim.py
-index
-e206ae44075a6fd82b8fa7dce782afd954da932d.
-.87
-d962b5c088a29c49843b9c4fa74f6b0c870e19
-100644
+(cd "$(git rev-parse --show-toplevel)" & & git apply --3way << 'EOF'
+diff --git a / acuvim.py b / acuvim.py
+index e206ae44075a6fd82b8fa7dce782afd954da932d..87d962b5c088a29c49843b9c4fa74f6b0c870e19 100644
 --- a / acuvim.py
 +++ b / acuvim.py
-
-
-@ @-29
-
-, 6 + 29, 15 @ @ RECORD_INTERVAL_MINUTES = 1
+@ @ -29, 6 +29, 15 @ @ RECORD_INTERVAL_MINUTES = 1
 # Raw accumulators are in "0.1 kWh / 0.1 kVARh" units (100x bigger than before).
 ENERGY_SCALE_KWH = 0.1  # 1 LSB = 0.1 kWh / 0.1 kVARh
 
