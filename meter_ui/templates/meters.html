@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Registered Meters</h2>
+
+<div style="text-align:right; margin-bottom:15px;">
+    <a href="/meter/new" class="button">+ Add New Meter</a>
+</div>
+
+<h2>Registered Meters</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Serial</th>
+        <th>IP Address</th>
+        <th>Unit</th>
+        <th>Model</th>
+        <th>Site</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for m in meters %}
+    <tr>
+        <td>{{ m.id }}</td>
+        <td>{{ m.serial_number }}</td>
+        <td>{{ m.ip_address }}</td>
+        <td>{{ m.unit_id }}</td>
+        <td>{{ m.model }}</td>
+        <td>{{ m.site_name }}</td>
+        <td>
+            <a href="/meter/{{ m.id }}/edit">Edit</a> |
+            <a href="/meter/{{ m.id }}/delete">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

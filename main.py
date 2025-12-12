@@ -1,5 +1,14 @@
 from __future__ import annotations
 
+"""CLI entrypoint for collecting historical logs from an Acuvim CL meter.
+
+Workflow:
+1) Connect to the meter over Modbus/TCP
+2) Optional: read meter/system time drift and sync the meter clock
+3) Read log status, choose an offset/range, and pull historical records
+4) Write a tab-separated CSV (TSV) with energy counters and timestamps
+"""
+
 import argparse
 import csv
 import math
@@ -35,7 +44,7 @@ def _records_to_csv(
     """
     Write records to CSV in a flat, easy-to-import format.
     Timestamp in text format "YYYY/MM/DD HH:MM" (no seconds),
-    and energies with 1 decimal place.
+    and energies with 1 decimal place to match JB’s sample.
     """
     fieldnames = [
         "serial",
@@ -47,6 +56,8 @@ def _records_to_csv(
         "kvarh_import",
         "kvarh_export",
     ]
+
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
 
     with csv_path.open("w", newline="") as f:
         writer = csv.DictWriter(

@@ -1,0 +1,235 @@
+/* GLOBAL */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* HEADER BAR */
+header {
+    background: #0077C8; /* VuWatt Blue */
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+header .logo {
+    height: 42px;
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 25px 40px;
+}
+
+/* PAGE TITLE */
+h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ACTION BUTTON (Add Meter) */
+.button {
+    background: #00CC66;
+    padding: 10px 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 15px;
+    transition: background 0.2s ease;
+}
+
+.button:hover {
+    background: #00994A;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+table th {
+    background: #0077C8;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+/* TABLE LINKS */
+table a {
+    color: #0077C8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* LAST ROW NO BORDER */
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* FORM CARD */
+.form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 450px;
+    max-width: 95%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* FORM ROWS */
+.form-row {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-row input {
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* FORM ACTION BUTTON */
+.form-actions {
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* WIDE COMPACT FORM CARD */
+.form-card-wide {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 600px;         /* Wider card */
+    max-width: 95%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* TWO-COLUMN GRID */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* Two equal columns */
+    grid-gap: 20px 25px;              /* Row gap 20px, column gap 25px */
+}
+
+/* FORM ELEMENTS */
+.form-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cell label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-cell input {
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* SAVE BUTTON ALIGNMENT */
+.form-actions {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.input-error {
+    border: 2px solid #cc0000;
+    background: #ffe5e5;
+}
+
+.input-valid {
+    border: 2px solid #00aa44;
+    background: #eaffea;
+}
+
+.error-text {
+    color: #cc0000;
+    font-size: 12px;
+    margin-top: 3px;
+    height: 14px; /* keeps layout steady even when empty */
+}
+
+.reachability-text {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.reachable {
+    color: #009900;
+}
+
+.unreachable {
+    color: #cc0000;
+}
+
+.button-small {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #0a7cff;
+    color: white;
+    border-radius: 6px;
+    border: none;
+}
+
+.button-small:hover {
+    background-color: #005ec2;
+}
+
+.status-text {
+    margin-top: 6px;
+    margin-bottom: 14px;   /* Extra space below status */
+    display: inline-block;
+}
+
+.button-test {
+    min-width: 110px;      /* Same width feel as Save button */
+    height: 38px;          /* Match input height */
+    font-weight: 600;
+}
+
+.content-container {
+    margin-top: 40px; /* previously ~20, increase spacing */
+}
