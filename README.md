@@ -20,6 +20,7 @@ This project retrieves historical logs from an Acuvim CL meter and writes them t
    python main.py --host <METER_IP> --unit <UNIT_ID> --serial <SERIAL> --sync-time
    ```
    Add `--verbose` to see the drift measurement, sync decision, and log status details in the terminal.
+   To also run collection with drift checking in one command, append `--sync-time` (optionally `--allowed-drift 60`) and `--verbose` to any run.
 
 ### Time sync-only shortcut
 If you just want to check/sync the meter clock without changing the collection window, reuse your normal command and add
@@ -50,6 +51,22 @@ You can manage a fleet of meters using the bundled FastAPI UI under `meter_ui/`.
 4) Add meters with serial/IP/unit/model/site info. The “Test Device” button will attempt to read the meter time registers (0x1040–0x1045) to confirm connectivity.
 
 Database fields include `serial_number`, `ip_address`, `unit_id`, `enabled`, `last_collected`, `last_timesync`, `last_drift_seconds`, `last_record_index`, and `output_folder` so the collector service can resume from the last pointer per meter.
+
+If you hit a SQLAlchemy `TypingOnly` assertion on Python 3.13, reinstall with the pinned dependencies and confirm versions:
+
+```bash
+pip install --upgrade --force-reinstall -r requirements.txt
+python scripts/check_env_versions.py
+```
+
+SQLAlchemy should report `>=2.0.36` and `typing_extensions` should be present.
+
+## Verify your local code matches this repo (PyCharm or terminal)
+
+1. In the project root, run `git status`. A clean tree means your files match this repo snapshot.
+2. If you suspect drift, run `git fetch` and compare (`git diff origin/work...`) or `git pull` to update.
+3. Open `requirements.txt` to confirm the SQLAlchemy pin (`>=2.0.36,<3.0.0`) and `typing_extensions` entry.
+4. If PyCharm uses its own virtualenv, re-run `pip install -r requirements.txt` inside that venv so dependencies align.
 
 ## Pushing to your Git remote
 This repository currently has no remote configured. To push your work to GitHub or another server:
