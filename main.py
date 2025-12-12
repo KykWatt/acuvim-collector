@@ -35,7 +35,7 @@ def _records_to_csv(
     """
     Write records to CSV in a flat, easy-to-import format.
     Timestamp in text format "YYYY/MM/DD HH:MM" (no seconds),
-    and energies with 1 decimal place to match JB’s sample.
+    and energies with 1 decimal place.
     """
     fieldnames = [
         "serial",
@@ -49,7 +49,13 @@ def _records_to_csv(
     ]
 
     with csv_path.open("w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter="\t")
+        writer = csv.DictWriter(
+            f,
+            fieldnames=fieldnames,
+            delimiter="\t",
+            quoting=csv.QUOTE_NONE,
+            escapechar="\\",
+        )
         writer.writeheader()
 
         for r in records:
@@ -94,7 +100,7 @@ def main() -> None:
                 "Log status → used=%s total=%s record_size=%sB interval=%smin"
                 % (
                     status.used_records,
-                    status.total_records,
+                    status.max_records,
                     status.record_size_bytes,
                     RECORD_INTERVAL_MINUTES,
                 )

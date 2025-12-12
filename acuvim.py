@@ -53,6 +53,11 @@ class LogStatus:
     used_records: int
     record_size_bytes: int
 
+    # Backward compatibility: older callers referenced ``total_records``.
+    @property
+    def total_records(self) -> int:  # pragma: no cover - passthrough helper
+        return self.max_records
+
 
 @dataclass
 class AcuvimRecord:
