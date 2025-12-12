@@ -21,6 +21,17 @@ This project retrieves historical logs from an Acuvim CL meter and writes them t
    ```
    Add `--verbose` to see the drift measurement, sync decision, and log status details in the terminal.
 
+### Time sync-only shortcut
+If you just want to check/sync the meter clock without changing the collection window, reuse your normal command and add
+`--sync-time` (optionally adjust `--allowed-drift`, default 60 seconds). Example:
+
+```bash
+python main.py --host 192.168.68.43 --unit 1 --serial CLD54061244 --mode last --minutes 5 --output test.tsv --sync-time --verbose
+```
+
+In the output you should see a drift line (meter vs system) and either a “syncing meter time” message or “drift within
+limits → no sync required.”
+
 ## Pushing to your Git remote
 This repository currently has no remote configured. To push your work to GitHub or another server:
 1. Add your remote URL:
