@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="form-card-wide">
+
+    <h2>{{ meter and "Edit Meter" or "Add New Meter" }}</h2>
+
+    <form method="post"
+          onsubmit="submitForm(event)"
+          action="{{ meter and ('/meter/' ~ meter.id ~ '/update') or '/meter/save' }}">
+
+        <div class="form-grid">
+
+            <!-- Serial Number (required) -->
+            <div class="form-cell">
+                <label>Serial Number</label>
+                <input type="text" name="serial_number"
+                       value="{{ meter.serial_number if meter else '' }}"
+                       required
+                       oninput="validateRequired(this)">
+                <small class="error-text" id="serial_number_error"></small>
+            </div>
+
+            <!-- IP Address (required, must be valid IPv4) -->
+            <div class="form-cell">
+    <label>IP Address</label>
+
+    <div class="input-with-button">
+        <input type="text" name="ip_address"
+               value="{{ meter.ip_address if meter else '' }}"
+               required
+               oninput="validateIP(this)"
+               style="flex:1;">
+
+        <button type="button"
+                class="button button-small"
+                onclick="runDeviceTest()">
+            Test Device
+        </button>
+    </div>
+
+    <small class="error-text" id="ip_address_error"></small>
+    <small id="device_test_msg" class="status-text"></small>
+</div>
+
+
+            <!-- Unit ID (positive integer) -->
+            <div class="form-cell">
+                <label>Unit ID</label>
+                <input type="number" name="unit_id"
+                       value="{{ meter.unit_id if meter else '1' }}"
+                       oninput="validateNumber(this)">
+                <small class="error-text" id="unit_id_error"></small>
+            </div>
+
+            <!-- Baud Rate (positive integer) -->
+            <div class="form-cell">
+                <label>Baud Rate</label>
+                <input type="number" name="baud_rate"
+                       value="{{ meter.baud_rate if meter else '9600' }}"
+                       oninput="validateNumber(this)">
+                <small class="error-text" id="baud_rate_error"></small>
+            </div>
+
+            <!-- Model (optional) -->
+            <div class="form-cell">
+                <label>Model</label>
+                <input type="text" name="model"
+                       value="{{ meter.model if meter else 'Acuvim-L' }}">
+                <small class="error-text" id="model_error"></small>
+            </div>
+
+            <!-- Site Name (optional) -->
+            <div class="form-cell">
+                <label>Site Name</label>
+                <input type="text" name="site_name"
+                       value="{{ meter.site_name if meter else '' }}">
+                <small class="error-text" id="site_name_error"></small>
+            </div>
+
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="button">Save</button>
+        </div>
+
+    </form>
+</div>
+
+<!-- Inline validation script -->
+<script>
+
+function runDeviceTest() {
+    const ipInput = document.querySelector("input[name='ip_address']");
+    const ip = ipInput.value.trim();
+
+    const unitInput = document.querySelector("input[name='unit_id']");
+    const unit = unitInput.value.trim() || "1";
+
+    const msg = document.getElementById("device_test_msg");
+
+    // IP format validator first
+    const ipv4 =
+        /^(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)$/;
+
+    if (!ipv4.test(ip)) {
+        msg.innerText = "Invalid IP format";
+        msg.className = "unreachable";
+        ipInput.classList.add("input-error");
+        return;
+    }
+
+    // Show loading state
+    msg.innerText = "Testing device...";
+    msg.className = "reachability-text";
+
+    fetch(`/api/test_device?ip=${ip}&unit=${unit}`)
+        .then(res => res.json())
+        .then(data => {
+
+            if (data.reachable) {
+                ipInput.classList.remove("input-error");
+                ipInput.classList.add("input-valid");
+
+                msg.innerText = `Online ✓ (Device Time: ${data.device_time})`;
+                msg.className = "reachable";
+            }
+            else {
+                ipInput.classList.remove("input-valid");
+                ipInput.classList.add("input-error");
+
+                const reason = data.reason ? ` (${data.reason})` : "";
+                msg.innerText = `Offline ✗${reason}`;
+                msg.className = "unreachable";
+            }
+        })
+        .catch((err) => {
+            ipInput.classList.add("input-error");
+            msg.innerText = `Error contacting device (${err})`;
+            msg.className = "unreachable";
+        });
+}
+
+function validateIP(input) {
+    const ip = input.value.trim();
+    const error = document.getElementById(input.name + "_error");
+
+    // Simple IPv4 regex
+    const ipv4 =
+        /^(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)$/;
+
+    if (!ipv4.test(ip)) {
+        input.classList.add("input-error");
+        input.classList.remove("input-valid");
+        error.innerText = "Invalid IP format";
+        return false;
+    }
+
+    input.classList.remove("input-error");
+    input.classList.add("input-valid");
+    error.innerText = "";
+    return true;
+}
+
+function validateRequired(input) {
+    const value = input.value.trim();
+    const error = document.getElementById(input.name + "_error");
+
+    if (value === "") {
+        input.classList.add("input-error");
+        input.classList.remove("input-valid");
+        error.innerText = "This field is required";
+        return false;
+    }
+
+    input.classList.remove("input-error");
+    input.classList.add("input-valid");
+    error.innerText = "";
+    return true;
+}
+
+function validateNumber(input) {
+    const value = input.value.trim();
+    const error = document.getElementById(input.name + "_error");
+
+    if (!/^\d+$/.test(value) || Number(value) <= 0) {
+        input.classList.add("input-error");
+        input.classList.remove("input-valid");
+        error.innerText = "Must be a positive number";
+        return false;
+    }
+
+    input.classList.remove("input-error");
+    input.classList.add("input-valid");
+    error.innerText = "";
+    return true;
+}
+
+// Final check before submit
+function submitForm(event) {
+    const serial = document.querySelector("input[name='serial_number']");
+    const ip = document.querySelector("input[name='ip_address']");
+    const uid = document.querySelector("input[name='unit_id']");
+    const baud = document.querySelector("input[name='baud_rate']");
+
+    let valid =
+        validateRequired(serial) &&
+        validateIP(ip) &&
+        validateNumber(uid) &&
+        validateNumber(baud);
+
+    if (!valid) {
+        event.preventDefault();
+        alert("Please correct the highlighted fields before saving.");
+    }
+}
+</script>
+
+{% endblock %}
