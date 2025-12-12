@@ -32,6 +32,25 @@ python main.py --host 192.168.68.43 --unit 1 --serial CLD54061244 --mode last --
 In the output you should see a drift line (meter vs system) and either a “syncing meter time” message or “drift within
 limits → no sync required.”
 
+## Meter management UI (FastAPI)
+You can manage a fleet of meters using the bundled FastAPI UI under `meter_ui/`. It stores meters in `meters.db` (SQLite) and lets you add/edit/delete meters, test Modbus reachability, and view meter time.
+
+1) Install dependencies (already covered in the main requirements):
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2) Start the UI locally:
+   ```bash
+   uvicorn meter_ui.main:app --reload --host 0.0.0.0 --port 8000
+   ```
+
+3) Open http://localhost:8000 in your browser.
+
+4) Add meters with serial/IP/unit/model/site info. The “Test Device” button will attempt to read the meter time registers (0x1040–0x1045) to confirm connectivity.
+
+Database fields include `serial_number`, `ip_address`, `unit_id`, `enabled`, `last_collected`, `last_timesync`, `last_drift_seconds`, `last_record_index`, and `output_folder` so the collector service can resume from the last pointer per meter.
+
 ## Pushing to your Git remote
 This repository currently has no remote configured. To push your work to GitHub or another server:
 1. Add your remote URL:
