@@ -70,6 +70,8 @@ def _records_to_csv(
 
 def main() -> None:
     args = _parse_args()
+    # Defensive fallback for environments running an older argparse schema
+    verbose = getattr(args, "verbose", False)
 
     _log(f"Connecting to {args.host}:{args.port} (unit/device_id {args.unit})...")
     with AcuvimClient(args.host, port=args.port, unit=args.unit) as cli:
@@ -77,12 +79,17 @@ def main() -> None:
 
         if args.sync_time:
             _sync_time_if_needed(cli, allowed_drift=args.allowed_drift)
+        elif verbose:
+            _log_time_drift_only(cli, allowed_drift=args.allowed_drift)
+            _log(
+                "Time sync not requested; use --sync-time to automatically update the meter clock"
+            )
         else:
             _log("Time sync skipped (use --sync-time to enable meter/system drift check).")
 
         # 1) Status
         status = cli.read_log_status()
-        if args.verbose:
+        if verbose:
             _log(
                 "Log status → used=%s total=%s record_size=%sB interval=%smin"
                 % (
@@ -120,7 +127,7 @@ def main() -> None:
             count = needed
 
         _log(f"Retrieving {count} records from offset={offset}...")
-        if args.verbose:
+        if verbose:
             _log(
                 f"Mode={args.mode} minutes={args.minutes} computed needed={needed}"
             )
@@ -196,6 +203,29 @@ def _sync_time_if_needed(cli: AcuvimClient, allowed_drift: int) -> float:
         _log(f"Meter time after sync: {new_time}")
     else:
         _log("Drift within limits → no sync required.")
+
+    return drift_seconds
+
+
+def _log_time_drift_only(cli: AcuvimClient, allowed_drift: int) -> float:
+    """
+    Read and log meter/system drift without applying a sync. Useful when
+    --sync-time is omitted but diagnostics are requested.
+    """
+    meter_time = cli.read_meter_time()
+    system_time = datetime.now().replace(microsecond=0)
+    drift_seconds = abs((system_time - meter_time).total_seconds())
+    _log(
+        "Drift check only: meter=%s, system=%s, drift=%.1fs (allowed=%ss)"
+        % (meter_time, system_time, drift_seconds, allowed_drift)
+    )
+
+    if drift_seconds > allowed_drift:
+        _log(
+            f"Drift exceeds allowed threshold but sync disabled (use --sync-time to update meter)."
+        )
+    else:
+        _log("Drift within allowed threshold.")
 
     return drift_seconds
 
