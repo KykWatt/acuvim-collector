@@ -93,3 +93,13 @@ If you want to make changes directly inside this workspace (without a GUI IDE):
 
 If you prefer a graphical editor, open this folder in VS Code, PyCharm, or another IDE on your machine and work normally; the Git co
 mmands above still apply for committing and pushing.
+
+## Viewing the full `acuvim.py` source
+If your terminal or tooling truncates the `acuvim.py` file, print it with line numbers in manageable chunks:
+
+```bash
+cd /workspace/acuvim-collector
+sed -n '1,400p' acuvim.py | nl -ba
+```
+
+Adjust the `1,400` range as needed (e.g., `401,800`) to view later sections.
